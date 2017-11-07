@@ -36,7 +36,7 @@ public class ScanHBase {
                     f = Bytes.toFloat(CellUtil.cloneValue(cell));
                 }
             }
-            out.write((word + " : " +f.toString()+ "\n").getBytes());
+            out.write((word + "\t" +f.toString()+ "\n").getBytes());
         }
     }
 }
